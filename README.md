@@ -14,4 +14,4 @@ A WhatsApp Chatbot to improve English vocabulary
 * Copy the https:// URL from the ngrok output and then paste it on the “When a message comes in” field.
 * Add the URL displayed on second terminal and set the request Method to *HTTP POST* and save changes
 * Send 'help' text from your verified WhatsApp number to Chatbot 
-* Now you are good to go to use this Chatbot 
+* Now you are good to go with this Chatbot 

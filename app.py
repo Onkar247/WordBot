@@ -59,8 +59,8 @@ def get_dictionary_response(word):
     word_metadata = {}
     definition = f"Sorry, definition is not available for {word}"
     example = f"Sorry, examples are not available for {word}"
-    syn = f"Sorry, synonyms is not available for {word}"
-    ant = f"Sorry, antonyms are not available for {word}"
+    syn = [f"Sorry, synonyms are not available for {word}"]
+    ant = [f"Sorry, antonyms are not available for {word}"]
 
     url = f'https://dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={keys.key}'
     response = requests.get(url)

@@ -43,7 +43,7 @@ def WordBot():
                 message.body(response["examples"])
                 responded = True
     if not responded:
-        message.body('Incorrect request format. Please enter help to see the correct format')
+        message.body('Incorrect request format. Please type *help* to see the correct format')
     return str(resp)
 
 def get_help_message():

@@ -2,9 +2,10 @@
 A WhatsApp Chatbot to improve English vocabulary
 
 # Steps to follow
+
 * Clone this project
-* Create a Twilio Account to get access to the Twilio API through which you can integrate your chatbot with WhatsApp
-* Install 'ngrok' a utilty to connect the flask application running on your local server to the public URL that Twilio can connect to 
+* Create a Twilio Account to get access to the Twilio API through which you can integrate this chatbot with WhatsApp
+* Install 'ngrok' to connect the flask application running on your local server to the public URL that Twilio can connect to 
 * Connect your smartphone with an active WhatsApp number to the Twilio Sandbox
 * Create an account on Merriam-Webster Developer Center to get the API Key for Merriam-Webster Dictionary API
 * Add this API Key into 'url' variable's <YOUR_API_KEY> section of app.py file and save changes

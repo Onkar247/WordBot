@@ -2,7 +2,7 @@ import json
 import requests
 from flask import Flask,request
 from twilio.twiml.messaging_response import MessagingResponse
-from keys import key
+import keys
 
 app=Flask(__name__)
 
@@ -62,7 +62,7 @@ def get_dictionary_response(word):
     syn = f"Sorry, synonyms is not available for {word}"
     ant = f"Sorry, antonyms are not available for {word}"
 
-    url = f'https://dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={key}'
+    url = f'https://dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={keys.key}'
     response = requests.get(url)
     api_response = json.loads(response.text)
 
